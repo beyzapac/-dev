@@ -1,0 +1,83 @@
+
+package hesap;
+class Hesapmakinesi{
+    int toplama;
+    int çıkarma;
+    int çarpma;
+    int bölme;
+    Hesapmakinesi() 
+    {
+        
+    }
+    Hesapmakinesi(int a,int b)
+    {
+        this.toplama= a+b;
+        this.çıkarma= a-b;
+    }
+    int toplama(int sayı1,int sayı2)
+    {
+        int sonuc;
+        sonuc=sayı1+sayı2;
+        return sonuc;
+    }
+    int çarpma(int sayı1,int sayı2)
+    {
+        int sonuc;
+        sonuc=sayı1*sayı2;
+        return sonuc;
+    }
+    int bölme(int sayı1,int sayı2)
+    {
+        int sonuc;
+        sonuc=sayı1/sayı2;
+        return sonuc;
+    }
+    int çıkarma(int sayı1,int sayı2)
+    {
+        int sonuc;
+        sonuc=sayı1-sayı2;
+        return sonuc;
+    }
+    int toplama(int sayı1,int sayı2,int sayı3,int sayı4)
+    {
+        int sonuc;
+        sonuc=sayı1+sayı2+sayı3+sayı4;
+        return sonuc;
+    }
+    public int getbölme() 
+    {
+        int sonuc= 0;
+       return sonuc;
+        
+    }
+    public void setbölme(int sayı1, int sayı2)
+    {
+        int sonuc;
+        sonuc=sayı1/sayı2;
+        
+        
+        
+    }
+    
+    class türetilen extends Hesapmakinesi 
+    {
+        
+    }
+    
+}
+
+
+public class Hesap {
+
+   
+    public static void main(String[] args) 
+    {
+      Hesapmakinesi hesapla=new Hesapmakinesi();
+      System.out.println(hesapla.toplama(10,5));
+      System.out.println(hesapla.çıkarma(7,5));
+      System.out.println(hesapla.çarpma(8,14));
+      System.out.println(hesapla.bölme(126,3));
+
+    }
+    
+}
